@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donau Games – Aqua Drift: VIENNA | Offizieller Webshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Direkt zum Hauptinhalt springen</a>
+
+<!-- Volle Navbar ganz oben quer drüber -->
+<header class="navbar">
+    <div class="navbar-bar">
+        <a href="index.html" class="brand">
+            <svg width="36" height="36" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                <circle cx="32" cy="32" r="30" fill="#0077b6"/>
+                <path d="M12 36C18 26 26 26 32 34C38 42 46 42 52 32" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+                <path d="M16 45C22 38 28 38 34 44C40 50 46 48 50 42" stroke="#bae6fd" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <span>Donau Games</span>
+        </a>
+
+        <nav aria-label="Hauptnavigation">
+            <ul class="nav-menu">
+                <li><a href="index.html" aria-current="page">Shop</a></li>
+                <li><a href="about.html">About Us & Marken</a></li>
+                <li><a href="lizenz.html">Lizenz</a></li>
+                <li><a href="urheberrecht.html">Medien & Rechte</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <a href="#checkout" class="nav-cta">Jetzt kaufen • 29,99 €</a>
+    </div>
+</header>
+
+<main id="main-content">
+    <!-- ABSCHNITT 1: Dunkler Hero-Banner -->
+    <section class="band band-dark" aria-labelledby="hero-title">
+        <div class="inner hero-grid">
+            <div>
+                <span class="kicker">PC & macOS • Einmalzahlung • Version 1.0</span>
+                <h1 id="hero-title">Aqua Drift: VIENNA</h1>
+                <p class="lead">
+                    Beherrsche die Wellen der Wiener Donau: Steuere V8-Rennboote durch den Donaukanal, rase unter der Reichsbrücke hindurch und meistere realistische Wasserphysik.
+                </p>
+
+                <div class="pill-row">
+                    <span class="pill">15+ V8-Rennboote </span>
+                    <span class="pill">4 Wiener Strecken</span>
+                    <span class="pill">Kein Abo • DRM-frei</span>
+                </div>
+
+
+                <div class="buy-bar">
+                    <div class="price-tag">
+                        29,99 €
+                        <span>inkl. 20 % USt.</span>
+                    </div>
+                    <a href="#checkout" class="btn btn-accent">Vollversion kaufen</a>
+                    <button type="button" class="btn btn-ghost-light" onclick="playV8Sound()">V8-Sound testen</button>
+                </div>
+                <p id="sound-status" aria-live="polite" style="font-size: 0.92rem; color: #bae6fd; margin-top: 0.7rem;"></p>
+            </div>
+
+            <div class="showcase-card">
+                <svg width="100%" height="260" viewBox="0 0 400 220" role="img" aria-labelledby="art-title art-desc">
+                    <title id="art-title">Key-Artwork Aqua Drift: VIENNA</title>
+                    <desc id="art-desc">Rennboot auf den Wellen der Wiener Donau vor der Skyline der Donau-City.</desc>
+                    <defs>
+                        <linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#071930"/>
+                            <stop offset="100%" stop-color="#0369a1"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="400" height="220" fill="url(#sunset)" rx="10"/>
+                    <circle cx="315" cy="52" r="24" fill="#fbbf24" opacity="0.9"/>
+                    <rect x="35" y="70" width="32" height="70" fill="#0f172a" opacity="0.75"/>
+                    <rect x="78" y="45" width="44" height="95" fill="#1e293b" opacity="0.9"/>
+                    <rect x="132" y="75" width="36" height="65" fill="#0f172a" opacity="0.75"/>
+                    <path d="M0 135 Q 100 112 200 135 T 400 135 L 400 220 L 0 220 Z" fill="#0284c7"/>
+                    <polygon points="145,130 275,130 248,106 168,106" fill="#f59e0b"/>
+                    <polygon points="175,106 232,106 220,94 182,94" fill="#fef3c7"/>
+                    <path d="M0 162 Q 100 144 200 162 T 400 162 L 400 220 L 0 220 Z" fill="#0369a1"/>
+                </svg>
+                <div style="display: flex; justify-content: space-between; padding-top: 0.75rem; font-size: 0.88rem; color: #cbd5e1;">
+                    <span>Offizielles Key-Artwork (Eigenwerk)</span>
+                    <span>60 FPS • 4K Ready</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABSCHNITT 2: Eisblauer Kennzahlen-Streifen -->
+    <section class="band band-ice" aria-label="Produkt-Kennzahlen">
+        <div class="inner grid-4">
+            <div class="stat-card">
+                <div class="stat-value">29,99 €</div>
+                <div class="stat-label">Einmalzahlung (Unbefristet)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">15+ Boote</div>
+                <div class="stat-label">Tunbare V8-Rennklassen</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">Wien 1:1</div>
+                <div class="stat-label">Donaukanal & Reichsbrücke</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">WCAG AA</div>
+                <div class="stat-label">Barrierefrei & DSGVO-konform</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABSCHNITT 3: Weißer Feature-Bereich -->
+    <section class="band band-white" aria-labelledby="features-heading">
+        <div class="inner">
+            <span class="kicker">Gameplay & Medien</span>
+            <h2 id="features-heading">Was dich auf der Donau erwartet</h2>
+            <p class="lead">Drei Gründe, warum Aqua Drift: VIENNA das ultimative Wassersport-Erlebnis für Gamer ist.</p>
+
+            <div class="grid-3">
+                <article class="card">
+                    <div class="step-badge">01</div>
+                    <h3>Dynamische Wellenphysik</h3>
+                    <p>Jede Bugwelle beeinflusst deine Ideallinie in Echtzeit – vom ruhigen Hafen Freudenau bis zum reißenden Hauptstrom.</p>
+                </article>
+
+                <article class="card">
+                    <div class="step-badge">02</div>
+                    <h3>V8-Klangmarke erleben</h3>
+                    <p>Unser markenrechtlich geschützter V8-Bootsmotor-Sound sorgt für Gänsehaut beim Rennstart.</p>
+                    <button type="button" class="btn btn-outline" onclick="playV8Sound()" style="margin-top: 0.75rem;">Sound abspielen</button>
+                </article>
+
+                <article class="card">
+                    <div class="step-badge">03</div>
+                    <h3>Einmal kaufen, ewig spielen</h3>
+                    <p>Kein Launcher-Zwang, keine In-Game-Käufe. Du erhältst sofort deinen persönlichen Lizenzschlüssel.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABSCHNITT 4: Sanft getönter Checkout-Bereich -->
+    <section id="checkout" class="band band-slate" aria-labelledby="checkout-heading">
+        <div class="inner">
+            <span class="kicker">Direktvertrieb</span>
+            <h2 id="checkout-heading">Vollversion kaufen & Lizenz erhalten</h2>
+            <p class="lead">Wähle deine Plattform und schließe den Kauf in wenigen Sekunden ab.</p>
+
+            <div class="card">
+                <div class="checkout-wrap">
+                    <form onsubmit="handlePurchase(event)">
+                        <div class="form-group">
+                            <label for="buyer-name">Vollständiger Name *</label>
+                            <input type="text" id="buyer-name" placeholder="Max Mustermann" required autocomplete="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="buyer-email">E-Mail-Adresse für Produktschlüssel *</label>
+                            <input type="email" id="buyer-email" placeholder="max@beispiel.at" required autocomplete="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="platform">Betriebssystem *</label>
+                            <select id="platform" required>
+                                <option value="windows">Windows 10 / 11 (64-Bit)</option>
+                                <option value="macos">macOS (Apple Silicon & Intel)</option>
+                            </select>
+                        </div>
+
+                        <div class="checkbox-row">
+                            <input type="checkbox" id="accept-license" required>
+                            <label for="accept-license">Ich akzeptiere die <a href="lizenz.html">Endbenutzer-Lizenzvereinbarung (EULA)</a>. *</label>
+                        </div>
+
+                        <div class="checkbox-row">
+                            <input type="checkbox" id="accept-privacy" required>
+                            <label for="accept-privacy">Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen. *</label>
+                        </div>
+
+                        <button type="submit" class="btn" style="width: 100%; margin-top: 0.75rem;">Kostenpflichtig bestellen (29,99 €)</button>
+                    </form>
+
+                    <aside class="order-box" aria-label="Bestellübersicht">
+                        <h3>Bestellübersicht</h3>
+                        <div class="order-line"><span>Aqua Drift: VIENNA</span><strong>24,99 €</strong></div>
+                        <div class="order-line"><span>Unbefristete Einzelplatz-Lizenz</span><span>Inklusive</span></div>
+                        <div class="order-line"><span>Umsatzsteuer (20 % AT)</span><span>5,00 €</span></div>
+                        <div class="order-total"><span>Gesamtbetrag</span><span>29,99 €</span></div>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 1rem;">
+                            Digitale Bereitstellung unmittelbar nach Bestellabschluss.
+                        </p>
+                    </aside>
+                </div>
+                <div id="order-status" style="margin-top: 1.5rem;"></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <div>
+            <h3>Donau Games</h3>
+            <p style="font-size: 0.95rem; margin: 0;">Unabhängiges Game-Studio aus Wien. Entwickler von <em>Aqua Drift: VIENNA</em>.</p>
+        </div>
+        <div>
+            <h3>Rechtliches</h3>
+            <ul>
+                <li><a href="impressum.html">Impressum & Offenlegung</a></li>
+                <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+                <li><a href="lizenz.html">Lizenzbedingungen (EULA)</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Transparenz & Service</h3>
+            <ul>
+                <li><a href="urheberrecht.html">Urheberrecht & Medien</a></li>
+                <li><a href="barrierefreiheit.html">Barrierefreiheitserklärung</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="#cookies" onclick="reopenCookieSettings(); return false;">Cookie-Einstellungen</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner hidden" role="region" aria-label="Cookie-Einstellungen">
+    <div class="cookie-inner">
+        <p style="margin: 0; max-width: 720px; font-size: 0.95rem;">
+            <strong>Datenschutz (Demo):</strong> Wir verwenden technisch notwendige Speicherungen sowie optionale Analyse-Cookies. Infos in der <a href="datenschutz.html" style="color: #7dd3fc;">Datenschutzerklärung</a>.
+        </p>
+        <div style="display: flex; gap: 0.65rem;">
+            <button type="button" class="btn btn-accent" onclick="setCookieConsent('all')">Alle akzeptieren</button>
+            <button type="button" class="btn btn-ghost-light" onclick="setCookieConsent('essential')">Nur notwendige</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
