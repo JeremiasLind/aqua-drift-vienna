@@ -3,8 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us & Marken – Donau Games</title>
+    <title>About Us & Marken – Donau Games GmbH</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .marken-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 1.75rem;
+        }
+        .marken-row {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 1.75rem;
+            align-items: center;
+        }
+        .marken-preview {
+            border-radius: 12px;
+            padding: 1.5rem 1.25rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 140px;
+        }
+        @media (max-width: 760px) {
+            .marken-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Direkt zum Hauptinhalt springen</a>
@@ -45,57 +74,70 @@
             <h2>Das Studio aus Wien</h2>
             <div class="grid-4" style="margin: 1.75rem 0;">
                 <div class="stat-card"><div class="stat-value">Wien, AT</div><div class="stat-label">Unternehmensstandort</div></div>
-                <div class="stat-card"><div class="stat-value">600 Köpfe</div><div class="stat-label">Entwickler-Team</div></div>
+                <div class="stat-card"><div class="stat-value">~6 Köpfe</div><div class="stat-label">Entwickler-Team</div></div>
                 <div class="stat-card"><div class="stat-value">Einmalpreis</div><div class="stat-label">Geschäftsmodell (29,99 €)</div></div>
                 <div class="stat-card"><div class="stat-value">Gamer</div><div class="stat-label">Zielgruppe</div></div>
             </div>
             <div class="card">
                 <h3>Unsere Story & Produktvision</h3>
-                <div class="legal-todo">
-                    <strong>Dein Text (Aufgabe 0):</strong> Beschreibe hier dein Start-up <em>Donau Games</em>, die Zielgruppe (PC- & Rennspiel-Fans) und das Einmalzahlungs-Modell.
-                </div>
+                <p>Die <strong>Donau Games GmbH</strong> ist ein unabhängiges Indie-Game-Studio, welches seinen Sitz in Wien, Österreich hat. Dort arbeiten wir mit einem <strong>Kernteam von rund 6 Leuten</strong>, welches je nach Projektphase von verschiedenen Praktikanten unterstützt wird. Unser Team ist auf <strong>Game Design</strong>, <strong>3D-Grafiken</strong> und <strong>Softwareentwicklung</strong> spezialisiert.</p>
+                <p>Die Gründung erfolgte aus der Affinität zu Wien und dem Willen, aus unseren IT-Berufen eine Berufung zu machen. Zudem wollten wir einen Nischenmarkt weiter ausbauen und Leute für den Wasser-Motorsport begeistern. Um volle kreative Freiheit zu behalten, entwickelt unser Team unabhängig und vertreibt die Titel direkt über den eigenen <strong>Online-Shop</strong>.</p>
+                <p style="margin-bottom: 0;">Das Hauptprojekt <strong>Aqua Drift: VIENNA</strong> ist ein realistischer Rennboot-Simulator für PC und macOS mit über 15 Rennbooten, einer Einzelspieler-Kampagne sowie Time-Trial-Rennen, die originalgetreu auf Wiener Wasserwegen stattfinden. Zudem werden Updates den Spielern direkt zum Download bereitgestellt. Sowohl <em>Donau Games</em> als auch <em>Aqua Drift: VIENNA</em> stehen als eigenständige Marken für unabhängige Spieleentwicklung in Österreich.</p>
             </div>
         </div>
     </section>
 
-    <!-- Band 3: Weißer Marken-Showcase -->
+    <!-- Band 3: Weißer Marken-Showcase in Reihenform -->
     <section class="band band-white">
         <div class="inner">
             <span class="kicker">Markenrecht (Aufgabe 3)</span>
             <h2>Drei geschützte Markenformen</h2>
             <p class="lead">Jede Markenform schützt ein eigenes Erkennungsmerkmal unseres Spiels in den Nizza-Klassen 9 und 41.</p>
 
-            <div class="grid-3">
-                <article class="card">
-                    <span class="kicker">Form 1 • Wortmarke</span>
-                    <div style="background: var(--navy-900); color: #ffffff; padding: 1.4rem; border-radius: 12px; text-align: center; margin: 0.75rem 0 1rem;">
-                        <strong style="font-size: 1.35rem;">Aqua Drift: VIENNA</strong>
+            <div class="marken-stack">
+                <!-- Reihe 1: Wortmarke -->
+                <article class="card marken-row">
+                    <div class="marken-preview" style="background: var(--navy-900); color: #ffffff;">
+                        <span style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: #bae6fd; margin-bottom: 0.4rem;">Wortmarke</span>
+                        <strong style="font-size: 1.3rem;">Aqua Drift: VIENNA</strong>
                     </div>
-                    <p><strong>Nizza-Klassen:</strong> Klasse 9 (Computerspielsoftware) & Klasse 41 (Online-Spiele).</p>
-                    <div class="legal-todo"><strong>Dein Text:</strong> Bedeutung des Namens und Ergebnis deiner Markenrecherche (EUIPO eSearch / TMview).</div>
+                    <div>
+                        <span class="kicker">Form 1 • Wortmarke</span>
+                        <p style="margin: 0.35rem 0 0.75rem;"><strong>Nizza-Klassen:</strong> Klasse 9 (Computerspielsoftware) & Klasse 41 (Online-Spiele).</p>
+                        <p>Für dieses Projekt verwenden wir die Bezeichnung <strong>Aqua Drift: VIENNA</strong> sowie <strong>Donau Games</strong> als Namen des Studios. Der Name <em>Donau Games</em> verbindet den Standort Wien mit unserer Tätigkeit als Videospiel-Entwickler, während der Spieltitel den Schauplatz Wien mit dem Wasser-Rennsport-Aspekt (<em>Aqua Drift</em>) kombiniert.</p>
+                        <p style="margin-bottom: 0;">Als Teil des Arbeitsprozesses haben wir eine Markenrecherche in den offiziellen Datenbanken <strong>EUIPO eSearch plus</strong> und <strong>TMview</strong> (welches unter anderem das Österreichische Patentamt einschließt) durchgeführt. Geprüft wurden insbesondere die Nizza-Klasse 9 (herunterladbare Computerspielsoftware) und Klasse 41 (Bereitstellung von Online-Spielen und digitale Unterhaltung). Die Recherche ergab keine identischen oder verwechslungsfähigen älteren Markenrechte für „Donau Games“ oder „Aqua Drift: VIENNA“ in den relevanten Klassen. Bestehende Eintragungen mit Bestandteilen wie „Donau“ oder „Vienna“ betreffen branchenfremde Waren und Dienstleistungen, sodass mangels Waren- und Dienstleistungsähnlichkeit keine Verwechslungsgefahr besteht.</p>
+                    </div>
                 </article>
 
-                <article class="card">
-                    <span class="kicker">Form 2 • Bildmarke</span>
-                    <div style="background: var(--band-ice); padding: 1.15rem; border-radius: 12px; text-align: center; margin: 0.75rem 0 1rem;">
-                        <svg width="68" height="68" viewBox="0 0 64 64" fill="none" role="img" aria-label="Bildmarke: Stilisierte blaue Welle">
+                <!-- Reihe 2: Bildmarke -->
+                <article class="card marken-row">
+                    <div class="marken-preview" style="background: var(--band-ice);">
+                        <span style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--navy-900); margin-bottom: 0.5rem;">Bildmarke</span>
+                        <svg width="72" height="72" viewBox="0 0 64 64" fill="none" role="img" aria-label="Bildmarke: Stilisierte blaue Welle">
                             <circle cx="32" cy="32" r="30" fill="#0077b6"/>
                             <path d="M12 36C18 26 26 26 32 34C38 42 46 42 52 32" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
                             <path d="M16 45C22 38 28 38 34 44C40 50 46 48 50 42" stroke="#bae6fd" stroke-width="4" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <p><strong>Nizza-Klassen:</strong> Klasse 9 & Klasse 41.</p>
-                    <div class="legal-todo"><strong>Dein Text:</strong> Beschreibung der reinen Bildgestaltung (Donauwelle ohne Text) und Unterscheidungskraft.</div>
+                    <div>
+                        <span class="kicker">Form 2 • Bildmarke</span>
+                        <p style="margin: 0.35rem 0 0.75rem;"><strong>Nizza-Klassen:</strong> Klasse 9 & Klasse 41.</p>
+                        <p style="margin-bottom: 0;">Unser Logo besteht aus einem blauen Kreis, welcher eine weiße und eine hellblaue Welle im Zentrum beinhaltet. Da dieses Logo selbst als Vektorgrafik erstellt wurde, verfügt das Zeichen über <strong>originäre Unterscheidungskraft</strong>. Im Rahmen einer spezifischen Bildmarkenrecherche (mittels visueller Ähnlichkeitssuche) wurden erneut <strong>EUIPO eSearch plus</strong> und <strong>TMview</strong> mit Fokus auf die Nizza-Klassen 9 und 41 durchsucht. Hierbei wurden keine identischen oder verwechslungsfähigen Bildmarken in unserem Bereich gefunden.</p>
+                    </div>
                 </article>
 
-                <article class="card">
-                    <span class="kicker">Form 3 • Hörmarke</span>
-                    <div style="background: var(--band-ice); padding: 1.15rem; border-radius: 12px; text-align: center; margin: 0.75rem 0 1rem;">
+                <!-- Reihe 3: Hörmarke -->
+                <article class="card marken-row">
+                    <div class="marken-preview" style="background: var(--band-ice);">
+                        <span style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--navy-900); margin-bottom: 0.6rem;">Hörmarke</span>
                         <button type="button" class="btn" onclick="playV8Sound()">V8-Sound abspielen</button>
                         <p id="sound-status" aria-live="polite" style="font-size: 0.85rem; margin: 0.45rem 0 0;"></p>
                     </div>
-                    <p><strong>Nizza-Klassen:</strong> Klasse 9 & Klasse 41.</p>
-                    <div class="legal-todo"><strong>Dein Text:</strong> Akustisches Erkennungszeichen beim Spielstart und Hinterlegung als Audiodatei.</div>
+                    <div>
+                        <span class="kicker">Form 3 • Hörmarke</span>
+                        <p style="margin: 0.35rem 0 0.75rem;"><strong>Nizza-Klassen:</strong> Klasse 9 & Klasse 41.</p>
+                        <p style="margin-bottom: 0;">Für unsere Hörmarke (das V8-Motorengeräusch) wurden ebenfalls <strong>EUIPO eSearch plus</strong> und <strong>TMview</strong> in den Nizza-Klassen 9 und 41 nach Ähnlichkeiten durchsucht und keine kollidierenden Klangmarken gefunden. Rechtlich mangelt es dem realistischen Geräusch eines Motors im Kontext eines Rennboot-Simulators jedoch an <strong>hinreichender Unterscheidungskraft</strong> (rein beschreibende Wirkung), weshalb dieses Zeichen nicht als eigenständige Hörmarke eingetragen werden könnte.</p>
+                    </div>
                 </article>
             </div>
         </div>
@@ -104,7 +146,7 @@
 
 <footer>
     <div class="footer-grid">
-        <div><h3>Donau Games</h3><p style="font-size: 0.95rem; margin: 0;">Unabhängiges Game-Studio aus Wien.</p></div>
+        <div><h3>Donau Games GmbH</h3><p style="font-size: 0.95rem; margin: 0;">Unabhängiges Game-Studio aus Wien.</p></div>
         <div><h3>Rechtliches</h3><ul><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li><li><a href="lizenz.html">Lizenz (EULA)</a></li></ul></div>
         <div><h3>Transparenz</h3><ul><li><a href="urheberrecht.html">Urheberrecht</a></li><li><a href="barrierefreiheit.html">Barrierefreiheit</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
     </div>

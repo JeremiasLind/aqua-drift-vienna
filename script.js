@@ -17,7 +17,7 @@ function reopenCookieSettings() {
   if (banner) banner.classList.remove("hidden");
 }
 
-// Interaktive Tabs umschalten (für kompakte Komponenten statt langer Listen)
+// Interaktive Tabs umschalten
 function openTab(groupId, tabId, btnEl) {
   const group = document.getElementById(groupId);
   if (!group) return;
@@ -40,6 +40,10 @@ function playV8Sound() {
   if (!AudioCtx) return;
 
   const ctx = new AudioCtx();
+  if (ctx.state === "suspended") {
+    ctx.resume();
+  }
+
   const osc1 = ctx.createOscillator();
   const osc2 = ctx.createOscillator();
   const gain = ctx.createGain();
@@ -48,16 +52,16 @@ function playV8Sound() {
   osc2.type = "triangle";
 
   const now = ctx.currentTime;
-  osc1.frequency.setValueAtTime(55, now);
-  osc1.frequency.exponentialRampToValueAtTime(140, now + 0.8);
-  osc1.frequency.exponentialRampToValueAtTime(65, now + 1.8);
+  osc1.frequency.setValueAtTime(110, now);
+  osc1.frequency.exponentialRampToValueAtTime(240, now + 0.8);
+  osc1.frequency.exponentialRampToValueAtTime(130, now + 1.8);
 
-  osc2.frequency.setValueAtTime(110, now);
-  osc2.frequency.exponentialRampToValueAtTime(280, now + 0.8);
-  osc2.frequency.exponentialRampToValueAtTime(130, now + 1.8);
+  osc2.frequency.setValueAtTime(220, now);
+  osc2.frequency.exponentialRampToValueAtTime(460, now + 0.8);
+  osc2.frequency.exponentialRampToValueAtTime(260, now + 1.8);
 
   gain.gain.setValueAtTime(0.01, now);
-  gain.gain.linearRampToValueAtTime(0.25, now + 0.3);
+  gain.gain.linearRampToValueAtTime(0.35, now + 0.25);
   gain.gain.exponentialRampToValueAtTime(0.001, now + 2.0);
 
   osc1.connect(gain);
@@ -86,7 +90,6 @@ function handlePurchase(event) {
     </div>
   `;
 }
-//
 
 // Gemocktes Kontaktformular
 function handleContact(event) {
@@ -101,6 +104,10 @@ function handleContact(event) {
 
 function escapeHTML(str) {
   return str.replace(/[&<>'"]/g, tag => ({
-    '&': '&', '<': '<', '>': '>', "'": ''', '"': '"'
+    "&": "&",
+    "<": "<",
+    ">": ">",
+    "'": "'",
+    '"': """
   }[tag]));
 }
